@@ -1,2 +1,2 @@
 # Voice-Assistant
-Voice assistant helper made with python and the voice-recognition library
+This is voice assistant made with Python and the voice-recognition library. 
