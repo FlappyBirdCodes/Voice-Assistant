@@ -30,11 +30,12 @@ def get_audio():
     
     return said
 
+print("Say deactivate to terminate the program")
 print("Say help if you require access to the specific voice controls")
 print("")
-text_to_speech("Virtual assistant activated")
+text_to_speech("Voice assistant activated")
 while True:
-    print("Virtual assistant listening...")
+    print("Voice assistant listening...")
     
     # Listens to sound continously for 3 times
     message = get_audio()
@@ -44,8 +45,8 @@ while True:
     # Breaks program if instructed to or if no sound is detected
     if message == "deactivate":
         print("")
-        print("Virtual Assistant Deactivated")
-        text_to_speech("Virtual Assistant Deactivated")
+        print("Voice Assistant Deactivated")
+        text_to_speech("Voice Assistant Deactivated")
         break
 
     message = message.lower()
@@ -56,7 +57,7 @@ while True:
         print("Say: 'what is the time' to get the current time")
         print("Say: 'search <keyword>' to search that keyword on Google")
         print("Say: 'play <song>' to play that particular song on YouTube")
-        print("Say: 'open <website>' to open that particular website (only supports Google, YouTube, Amazon and Gmail)")
+        print("Say: 'open <website>' to open that particular website (only supports Google, YouTube, Amazon, Gmail and Discord)")
         message = "Here's a list of all voice controls and it's usage"
 
     # Tells user the current time
@@ -124,6 +125,6 @@ while True:
 
     print(message)
     text_to_speech(message)
-    print("Resetting virtual assistant...")
+    print("Resetting Voice assistant...")
     print("")
     time.sleep(2)
