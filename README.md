@@ -1,5 +1,5 @@
 # Voice-Assistant
-This is voice assistant made with Python and the speech_recognition library. It has many different features such as telling the time, being able to search on Google and playing music on YouTube.
+This is voice assistant made with python and the speech_recognition library. It has many different features such as telling the time, being able to search on Google and playing music on YouTube.
 
 # Getting Audio Input
 The program is able to get audio input by using the speech_recognition library. The audio is then converted into string format. If no audio was detected, the program will print out a warning message. 
